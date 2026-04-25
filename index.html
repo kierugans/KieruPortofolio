@@ -3,142 +3,228 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>kieru124 — Portfolio</title>
+  <title>kieru124 — Portfolio.exe</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'VT323', monospace;
-      background: #c0c0c0;
+      background: #008080;
       color: #000;
       image-rendering: pixelated;
+      cursor: url('https://cur.cursors-4u.com/cursors/cur-9/cur817.cur'), default;
     }
-    .mac-window {
-      border: 6px solid #000;
-      box-shadow: 8px 8px 0 #000;
-      background: #dfdfdf;
-    }
-    .title-bar {
-      background: #000080;
-      color: white;
-      padding: 4px 8px;
-      font-weight: bold;
-    }
+    .mac-window { border: 6px solid #000; box-shadow: 10px 10px 0 #000; background: #dfdfdf; }
+    .title-bar { background: linear-gradient(to right, #000080, #1084d0); color: white; padding: 4px 8px; font-weight: bold; cursor: move; }
     .retro-button {
-      border: 3px solid #000;
-      background: #c0c0c0;
-      box-shadow: 2px 2px 0 #000;
-      padding: 8px 20px;
+      border: 3px solid #fff; border-bottom-color: #000; border-right-color: #000;
+      background: #c0c0c0; box-shadow: 3px 3px 0 #000; padding: 10px 24px;
     }
-    .retro-button:active {
-      box-shadow: 1px 1px 0 #000;
-      transform: translate(1px, 1px);
-    }
-    .project-card {
-      border: 4px solid #000;
-      background: white;
-    }
-    img {
-      image-rendering: pixelated;
-    }
+    .retro-button:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 #000; }
+    .project-card { border: 4px solid #000; background: white; transition: all 0.2s; }
+    .project-card:hover { transform: translate(-6px, -6px); box-shadow: 12px 12px 0 #000; }
+    img { image-rendering: pixelated; }
   </style>
 </head>
 <body class="min-h-screen pb-12">
 
   <div class="bg-black text-white text-center py-1 text-sm border-b-4 border-white">
-    Muhammad Hafidz Alfathoni (kieru124) — Imaginature Studio
+    Muhammad Hafidz Alfathoni (kieru124) — Imaginature Studio © 2026
   </div>
 
-  <div class="max-w-5xl mx-auto mt-8 mac-window">
-    
-    <div class="title-bar flex items-center justify-between">
-      <div>kieru124 Portfolio.exe</div>
-      <div class="flex gap-4 text-xs">
-        <span>File</span><span>Edit</span><span>View</span><span>Help</span>
-      </div>
+  <div class="max-w-6xl mx-auto mt-8 mac-window" id="main-window">
+    <div class="title-bar flex items-center justify-between" id="titleBar">
+      <div>📁 kieru124 Portfolio.exe - Imaginature Studio</div>
     </div>
 
     <!-- Hero -->
-    <div class="bg-white p-8 border-b-4 border-black flex flex-col md:flex-row gap-10 items-center">
+    <div class="bg-white p-10 border-b-4 border-black flex flex-col md:flex-row gap-12 items-center">
       <div class="md:w-1/2">
-        <h1 class="text-6xl leading-none font-bold mb-4">Hello.<br>I'm kieru.</h1>
-        <p class="text-2xl mb-6">Roblox Experience Creator @ Imaginature Studio</p>
-        <p class="text-lg mb-8">Membuat pengalaman gunung yang imersif dan desain grafis retro.</p>
-        
-        <div class="flex gap-4">
-          <a href="#projects" class="retro-button text-xl">Lihat Projects</a>
-          <a href="#gfx" class="retro-button text-xl">GFX Works</a>
+        <h1 class="text-7xl leading-none font-bold mb-4">HELLO.<br>I'M KIERU.</h1>
+        <p class="text-3xl mb-3">Roblox Experience Creator & GFX Designer</p>
+        <p class="text-xl mb-6 leading-relaxed" style="font-family: monospace; font-size: 1rem;">
+          Muhammad Hafidz Alfathoni — creator dari Indonesia, founder Imaginature Studio.<br>
+          Saya membangun pengalaman Roblox bertema alam Sumatera Barat dan membuat desain grafis mulai dari GFX, poster, hingga thumbnail. Aktif di Fiverr sebagai <strong>PilusGFX</strong>.
+        </p>
+        <div class="flex flex-wrap gap-6">
+          <a href="#gfx" class="retro-button">🖼️ Behance GFX</a>
+          <a href="#projects" class="retro-button">🗻 Roblox Projects</a>
+          <a href="#fiverr" class="retro-button">💰 Fiverr Gigs</a>
         </div>
       </div>
-      
-      <div class="md:w-1/2 flex justify-center">
-        <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-34AE72992E00D7D9DDB4E4DF39C3F269-Png/150/150/AvatarHeadshot/Png/noFilter"
-             class="w-64 h-64 border-8 border-black" alt="kieru">
-      </div>
+      <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-34AE72992E00D7D9DDB4E4DF39C3F269-Png/150/150/AvatarHeadshot/Png/noFilter" class="w-72 h-72 border-8 border-black" alt="kieru">
     </div>
 
-    <!-- Experiences -->
-    <section id="projects" class="p-8 bg-white">
-      <h2 class="text-4xl mb-8">Imaginature Studio Experiences</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="project-card overflow-hidden">
-          <img src="https://tr.rbxcdn.com/180DAY-5b406d5b759d43613fb0d0687c550332/768/432/Image/Png/noFilter"
-               class="w-full h-64 object-cover border-b-4 border-black">
-          <div class="p-6">
-            <h3 class="text-2xl font-bold">[MERDEKA!] Mount Talang</h3>
-            <p class="text-gray-600 my-3">Gunung berapi dengan tea plantation dan danau kawah yang indah.</p>
-            <a href="https://www.roblox.com/games/114183207071930/MOUNT-TALANG" target="_blank" class="retro-button">Play Experience →</a>
-          </div>
-        </div>
-
-        <div class="project-card overflow-hidden">
-          <img src="https://tr.rbxcdn.com/180DAY-717b9b6da818c9401836f5d4ee1507e6/768/432/Image/Png/noFilter"
-               class="w-full h-64 object-cover border-b-4 border-black">
-          <div class="p-6">
-            <h3 class="text-2xl font-bold">Mount Talamau</h3>
-            <p class="text-gray-600 my-3">Pendakian epik ke puncak tertinggi Sumatera Barat.</p>
-            <a href="https://www.roblox.com/games/86710642002144/MOUNT-TALAMAU" target="_blank" class="retro-button">Play Experience →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GFX -->
-    <section id="gfx" class="p-8 bg-white border-t-4 border-black">
-      <h2 class="text-4xl mb-8">Graphic Design Works</h2>
+    <!-- Behance GFX -->
+    <section id="gfx" class="p-10 bg-white border-b-4 border-black">
+      <h2 class="text-5xl mb-10">🖼️ Behance Graphic Design Works</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <a href="https://www.behance.net/gallery/184355719/DESIGN-Album-Art-2" target="_blank" class="project-card overflow-hidden block">
-          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/796bbb184355719.Y3JvcCwzMzM4LDI2MTEsMjY0LDA.jpg" class="w-full h-64 object-cover" referrerpolicy="no-referrer">
-          <div class="p-6 text-center font-bold">Album Art</div>
+
+        <a href="https://www.behance.net/gallery/216726831/Panda-Liquid-Product-Manipulation-Design-Advertising" target="_blank" class="project-card overflow-hidden block">
+          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/157e06216726831.Y3JvcCwzODM1LDMwMDAsODUsMA.jpg" class="w-full h-64 object-cover">
+          <div class="p-6 text-center font-bold">Panda Liquid — Product Manipulation</div>
         </a>
-        <a href="https://www.behance.net/gallery/184353121/DESIGN-Streetwear-Tshirt-Design" target="_blank" class="project-card overflow-hidden block">
-          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/381e9f184353121.Y3JvcCwzOTk5LDMxMjgsMCwxNDM1.jpg" class="w-full h-64 object-cover" referrerpolicy="no-referrer">
-          <div class="p-6 text-center font-bold">Streetwear Design</div>
+
+        <a href="https://www.behance.net/gallery/203395647/Experiment-Insp-by-raizet" target="_blank" class="project-card overflow-hidden block">
+          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/56d4e9203395647.Y3JvcCwyNDgwLDE5MzksMCw4Mjg.jpg" class="w-full h-64 object-cover">
+          <div class="p-6 text-center font-bold">Experiment Insp by @raizet._</div>
         </a>
+
         <a href="https://www.behance.net/gallery/192235519/Vintage-Poster-2" target="_blank" class="project-card overflow-hidden block">
-          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/563ab0192235519.Y3JvcCwzODQxLDMwMDQsMCwyMTg.jpg" class="w-full h-64 object-cover" referrerpolicy="no-referrer">
-          <div class="p-6 text-center font-bold">Vintage Poster</div>
+          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/563ab0192235519.Y3JvcCwzODQxLDMwMDQsMCwyMTg.jpg" class="w-full h-64 object-cover">
+          <div class="p-6 text-center font-bold">Vintage Poster #2</div>
         </a>
+
+        <a href="https://www.behance.net/gallery/187160691/Vintage-Poster-1" target="_blank" class="project-card overflow-hidden block">
+          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/196039187160691.Y3JvcCw0NDM3LDM0NzAsMCwxMzcy.jpg" class="w-full h-64 object-cover">
+          <div class="p-6 text-center font-bold">Vintage Poster #1</div>
+        </a>
+
+        <a href="https://www.behance.net/gallery/184355287/DESIGN-Abstract-Project" target="_blank" class="project-card overflow-hidden block">
+          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/782685184355287.Y3JvcCwzNjg0LDI4ODEsMCwxNzM.jpg" class="w-full h-64 object-cover">
+          <div class="p-6 text-center font-bold">Abstract Project</div>
+        </a>
+
+        <a href="https://www.behance.net/gallery/184355719/DESIGN-Album-Art-2" target="_blank" class="project-card overflow-hidden block">
+          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/796bbb184355719.Y3JvcCwzMzM4LDI2MTEsMjY0LDA.jpg" class="w-full h-64 object-cover">
+          <div class="p-6 text-center font-bold">Album Art #2</div>
+        </a>
+
+        <a href="https://www.behance.net/gallery/184359055/DESIGN-Poster-Days-2" target="_blank" class="project-card overflow-hidden block">
+          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/ff2f90184359055.Y3JvcCwyODc0LDIyNDgsNTI2LDc5Ng.jpg" class="w-full h-64 object-cover">
+          <div class="p-6 text-center font-bold">Poster Days #2</div>
+        </a>
+
+        <a href="https://www.behance.net/gallery/184354859/DESIGN-Album-Cover-Art" target="_blank" class="project-card overflow-hidden block">
+          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/3e95a8184354859.Y3JvcCwyNDgzLDE5NDIsOTI4LDI1Mg.jpg" class="w-full h-64 object-cover">
+          <div class="p-6 text-center font-bold">Album Cover Art</div>
+        </a>
+
+        <a href="https://www.behance.net/gallery/184352941/DESIGN-Poster-Days" target="_blank" class="project-card overflow-hidden block">
+          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/2f9a52184352941.Y3JvcCwyNzg4LDIxODEsMzEwLDU2NQ.jpg" class="w-full h-64 object-cover">
+          <div class="p-6 text-center font-bold">Poster Days</div>
+        </a>
+
+        <a href="https://www.behance.net/gallery/184353121/DESIGN-Streetwear-Tshirt-Design" target="_blank" class="project-card overflow-hidden block">
+          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/381e9f184353121.Y3JvcCwzOTk5LDMxMjgsMCwxNDM1.jpg" class="w-full h-64 object-cover">
+          <div class="p-6 text-center font-bold">Streetwear T-Shirt</div>
+        </a>
+
+        <a href="https://www.behance.net/gallery/184365717/MANIPULATION-DESIGN-Compositing-Character" target="_blank" class="project-card overflow-hidden block">
+          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/9e575f184365717.Y3JvcCwyMTY3LDE2OTUsNzc3LDI4NA.jpg" class="w-full h-64 object-cover">
+          <div class="p-6 text-center font-bold">Compositing Character</div>
+        </a>
+
+        <a href="https://www.behance.net/gallery/184366285/DESIGN-Youtube-Banner-1" target="_blank" class="project-card overflow-hidden block">
+          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/101cb8184366285.Y3JvcCwyMTYzLDE2OTIsMzA1LDA.jpg" class="w-full h-64 object-cover">
+          <div class="p-6 text-center font-bold">YouTube Banner #1</div>
+        </a>
+
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="p-8 bg-white border-t-4 border-black">
-      <h2 class="text-4xl mb-8 text-center">Let's Connect</h2>
-      <div class="flex flex-wrap justify-center gap-10 text-2xl mb-12">
-        <a href="https://www.roblox.com/users/5541564144/profile" target="_blank" class="hover:underline">Roblox</a>
-        <a href="https://www.behance.net/kierugfx" target="_blank" class="hover:underline">Behance</a>
-        <a href="https://www.instagram.com/kieeruu_" target="_blank" class="hover:underline">Instagram</a>
-        <a href="https://www.linkedin.com/in/alfathoni/" target="_blank" class="hover:underline">LinkedIn</a>
+    <!-- Roblox Projects -->
+    <section id="projects" class="p-10 bg-white border-b-4 border-black">
+      <h2 class="text-5xl mb-10">🗻 Imaginature Studio Experiences</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+
+        <div class="project-card overflow-hidden">
+          <img src="https://tr.rbxcdn.com/180DAY-5b406d5b759d43613fb0d0687c550332/768/432/Image/Png/noFilter" class="w-full h-64 object-cover border-b-4 border-black">
+          <div class="p-6">
+            <h3 class="text-3xl font-bold">[MERDEKA!] Mount Talang</h3>
+            <p class="my-4">Gunung berapi dengan tea plantation dan danau kawah yang indah.</p>
+            <a href="https://www.roblox.com/games/114183207071930/MOUNT-TALANG" target="_blank" class="retro-button">PLAY NOW →</a>
+          </div>
+        </div>
+
+        <div class="project-card overflow-hidden">
+          <img src="https://tr.rbxcdn.com/180DAY-717b9b6da818c9401836f5d4ee1507e6/768/432/Image/Png/noFilter" class="w-full h-64 object-cover border-b-4 border-black">
+          <div class="p-6">
+            <h3 class="text-3xl font-bold">Mount Talamau</h3>
+            <p class="my-4">Pendakian epik ke puncak tertinggi Sumatera Barat.</p>
+            <a href="https://www.roblox.com/games/86710642002144/MOUNT-TALAMAU" target="_blank" class="retro-button">PLAY NOW →</a>
+          </div>
+        </div>
+
+        <div class="project-card overflow-hidden">
+          <img src="https://tr.rbxcdn.com/180DAY-8ed8eec3f8a4581352ea900ffed7e833/768/432/Image/Png/noFilter" class="w-full h-64 object-cover border-b-4 border-black">
+          <div class="p-6">
+            <h3 class="text-3xl font-bold">Mount Marapi</h3>
+            <p class="my-4">Jelajahi hutan tropis dan sawah menuju puncak gunung berapi aktif di Sumatera Barat.</p>
+            <a href="https://www.roblox.com/games/82626444426757/MOUNT-MARAPI" target="_blank" class="retro-button">PLAY NOW →</a>
+          </div>
+        </div>
+
+
       </div>
-      <div class="text-center">
-        <a href="mailto:alfathonihafidz@gmail.com?subject=Project%20Inquiry%20%E2%80%94%20%5BYour%20Name%5D&body=Hi%20Hafidz%2C%0A%0AMy%20name%20is%20%5BYour%20Name%5D%20and%20I%20found%20your%20portfolio.%0A%0AI%27m%20interested%20in%20discussing%3A%0A%5BDescribe%20your%20project%20or%20request%5D%0A%0ALooking%20forward%20to%20hearing%20from%20you%21%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D" class="retro-button text-2xl">kirim email</a>
+    </section>
+
+    <!-- Fiverr Gigs -->
+    <section id="fiverr" class="p-10 bg-white">
+      <h2 class="text-5xl mb-10">💰 Fiverr Services - PilusGFX</h2>
+      <p class="text-2xl mb-8">4.7⭐ (207 reviews) • Roblox GFX & Design Specialist</p>
+
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <div class="project-card overflow-hidden">
+          <div class="bg-black h-40 flex items-center justify-center border-b-4 border-black">
+            <span class="text-white text-6xl">🎮</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-2">Roblox GFX — Catchy & Amazing</h3>
+            <p class="mb-4 text-lg">High quality Roblox GFX art for groups, thumbnails, and promotions.</p>
+            <a href="https://www.fiverr.com/pilusgfx/create-amazing-cathcy-roblox-gfx" target="_blank" class="retro-button">Order →</a>
+          </div>
+        </div>
+
+        <div class="project-card overflow-hidden">
+          <div class="bg-black h-40 flex items-center justify-center border-b-4 border-black">
+            <span class="text-white text-6xl">🖼️</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-2">Roblox Thumbnail — Pro Quality</h3>
+            <p class="mb-4 text-lg">Professional Roblox game thumbnail delivered within 12 hours.</p>
+            <a href="https://www.fiverr.com/pilusgfx/do-a-professional-roblox-thumbnail" target="_blank" class="retro-button">Order →</a>
+          </div>
+        </div>
+
+        <div class="project-card overflow-hidden">
+          <div class="bg-black h-40 flex items-center justify-center border-b-4 border-black">
+            <span class="text-white text-6xl">🕹️</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-2">10 Custom Roblox Poses</h3>
+            <p class="mb-4 text-lg">10 custom character poses for your Roblox thumbnails and GFX projects.</p>
+            <a href="https://www.fiverr.com/pilusgfx/create-custom-roblox-pose-for-your-thumbnail" target="_blank" class="retro-button">Order →</a>
+          </div>
+        </div>
+
       </div>
     </section>
   </div>
 
-  <footer class="text-center text-sm mt-12 text-gray-600">
-    © 2026 Muhammad Hafidz Alfathoni (kieru124)
+  <footer class="text-center text-sm mt-16 text-gray-700">
+    © 2026 Muhammad Hafidz Alfathoni (kieru124) • Made with pure Windows 98 nostalgia
   </footer>
+
+  <script>
+    // Click Sound + Draggable
+    const clickSound = new Audio('https://freesound.org/data/previews/66/66930_931655-lq.mp3');
+    document.querySelectorAll('a').forEach(a => a.addEventListener('click', () => clickSound.play()));
+
+    // Draggable Window
+    const win = document.getElementById('main-window');
+    const bar = document.getElementById('titleBar');
+    let dragging = false, x, y;
+    bar.addEventListener('mousedown', e => { dragging = true; x = e.clientX - win.offsetLeft; y = e.clientY - win.offsetTop; });
+    document.addEventListener('mousemove', e => {
+      if (dragging) {
+        win.style.position = 'absolute';
+        win.style.left = (e.clientX - x) + 'px';
+        win.style.top = (e.clientY - y) + 'px';
+      }
+    });
+    document.addEventListener('mouseup', () => dragging = false);
+  </script>
 </body>
 </html>
